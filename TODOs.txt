@@ -1,0 +1,23 @@
+Datenimport: kaggle 
+
+1429_1.csv
+
+# manuell bewertet - logik: gewichtung not: negativ (* 0.5 , 0.3) 
+polarity: positive / negative - 
+
+# Decoding: I, my opinion,... auf word-basis 
+subjectivity: subjective / objective -  
+
+polarity ~ review rating
+subjectivity ~ ( bewertung durch andere * review rating )
+
+stopwords entfernt 
+wordcloud most common 100 words
+
+polarity ~ *
+top 1000 plus in wcloud
+worst 1000 minus in wclod 
+
+- wordloud: nach produktkategorie
+- wordcloud-funktion + dict produktkategorie
+
